@@ -65,10 +65,15 @@ Se você deseja contribuir com este projeto, siga os passos abaixo:
 ## Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+
+## Resumo e contrinuições
+Este projeto, chamado **"Desafio Entrada de Dados"**, visa a criação de um robô automatizado capaz de ler dados de um arquivo Excel e registrá-los em um formulário online. O robô deve ser flexível o suficiente para lidar com variações nos campos do formulário, garantindo a robustez e a adaptabilidade do processo de entrada de dados.
+
 ---
 
 💡 **Dica**: Mantenha seu código organizado e documentado para facilitar a colaboração de outros desenvolvedores!
 
 ---
 
-![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+Contribuições são bem-vindas! Por favor, certifique-se de manter o código limpo e bem documentado para facilitar a compreensão e a colaboração de todos os desenvolvedores.
+
