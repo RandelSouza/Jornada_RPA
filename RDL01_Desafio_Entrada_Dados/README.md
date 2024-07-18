@@ -21,9 +21,9 @@ A estrutura do projeto é simples e organizada da seguinte forma:
 
 ## Funcionalidades Implementadas
 - ✅ **Encerrar processos (kill process)**: Sequência genérica para encerrar processos.
+- ✅ **Leitura do arquivo `lista.xlsx`**: Implementar o módulo para ler dados do arquivo Excel.
 
 ## Funcionalidades Pendentes
-- ⏳ **Leitura do arquivo `lista.xlsx`**: Implementar o módulo para ler dados do arquivo Excel.
 - ⏳ **Registro das informações no formulário online**: Implementar o módulo para preencher e submeter o formulário online.
 - ⏳ **Tratamento de variações nos campos do formulário**: Implementar lógica para lidar com mudanças na posição e nome dos campos.
 
