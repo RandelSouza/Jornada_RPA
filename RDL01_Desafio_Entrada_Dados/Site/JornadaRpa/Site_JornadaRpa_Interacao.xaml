@@ -1,0 +1,164 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Site_JornadaRpa_Interacao" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_dtDados" Type="InArgument(sd:DataTable)" />
+  </x:Members>
+  <this:Site_JornadaRpa_Interacao.in_dtDados>
+    <InArgument x:TypeArguments="sd:DataTable" />
+  </this:Site_JornadaRpa_Interacao.in_dtDados>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1239,508</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Site_JornadaRpa_Interacao_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Descrição: Responsável por realizar a interação no site jornada RPA desafio entrada de dados.&#xD;&#xA;&#xD;&#xA;Pré: Data table com dados de entrada&#xD;&#xA;&#xD;&#xA;Pós: Entrada de dados feita no desafio&#xD;&#xA;&#xD;&#xA;Input:&#xD;&#xA;        Data table com dados de entrada&#xD;&#xA;Output" DisplayName="Site_JornadaRpa_Interacao" sap:VirtualizedContainerService.HintSize="512,1366" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Inicio Site_JornadaRpa_Interacao&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Alex Diogo - Site de Desafios RPA" sap:VirtualizedContainerService.HintSize="450,779" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="a6c627ad-890a-4489-9ccc-1b51a5d7c61b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,490" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Iniciando loop no data table de entrada&quot;]" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dtDados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEachRow>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Finalizando loop no data table de entrada&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1374, 295, 1382, 744" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsRAAALEQF/ZF+RAAAEMUlEQVRYR7WXe2hWdRjHXzfRJCgnalFpRcZy3TQqa39IBpHUsgSrv5LVSou0Za6rBk0yvKTgP9YjGChZaiCWYH+EqZkpmiaSZUprummlK1lp0MWePs/vPGc7nr1n77tLX/hwdp7r7/1dzjnL/Z+SXO4WmA7LYSschhb4zVnvob0nil4PC+A70EJ4Ws9FsRHwbrJ4EZzx9J6JQrVwNlG4WFq9RPdFkRWposYmWAar4YTb8tHgZbonCqxPFdwLN7g7iPvz4U33p9nuYV0XyWtSxRqhxN3mvwoG+K3dL4FkvLHC3V0TiW+nChn3u28o7HDbydhu8vtkTq27skVQqf8ZxP3sRIEYO9Ph13NNz4xR5r6VKfs5yxWE8WZ4A7aBTWszHIGdsAGSBWKaPd3yD6V8Rrn7Fidsx0JCLAz21MpqUAg7gkO8Tl3CbuyHMItcP0nYF5gtiJu5CUd3mevlrN5MsGbvwCC3DYd/IY6/PA7+OGHsKXeGoilh7wdfJ+LWuSs4kwV6g3q4GvrAQHgY0vtiqLcPA5iYcvYWP8LplM2Y5q3bhfGBVFCaP8GOWr6CXWGVt+wonMlBHIV9sBneh6kwGMqgEmxzJQsXQ+F3P0H3wipIv8sPwCwPC+K+JuEvxGpPyxZBt4I9dFTKB6tUj1KZcbvK5BtVriyLC9kXzUhPsZz33N4ZSz08WwTZiyNKWDJepfVllTOvqJyGP2ap/FSnUn9HXPBvuMjzKtyWD9s3r4YGhURgdEzWPqSi81QOTVf56kmVXU9E7H8Ke73K0nvi4rs8z8531sb8MBQvJAInhIS6SposVhlzmcrIISrHnlPZO1Xlyykqux2dEy1N1GAs9IdTfp+muHc9gWtlQF+VxlqVL2raC7xVpXLi+WgA8SCaZqhsqVYp6WMxAnYy/mrLOZfj0PZ9kCmCGmTMpdFab/cBXNA/mnpbCmu+xwexj2VpfFblGjZpLrcFrgvx+fkZ+nqbbBHUKnePUDnJr/2dzTfp2qjAtsfYjC+pfPM0vhdUjvLrbRaOz1SpHGYxn8OkEJufomfggIy6WKWZNT84TaWFZsMujIp8xiA2V+uyCeUqKyeqHH5GpYGlumKg+T+F5Ps9zW5v0bkIXB7WdNNkle8pfoQptutNl3Qs2vJitAei+4VwsM3XkUXeonMROBrOyoNM/a802Pm4yg8Mws7+/LtUKjgRw5mR2WM5BfNVxrNcUYMpfs2iwlt0LgIHwT9SM5oGC1VO+brbEbTlaGJpfuGqi3gy3hYXt+8+e2wnGybZ6uULi+BHpLREZc44ldd42j3KOd/BLFhzG4zNiu1+m6GouD2O4w/QrLdo+AYsSgR/5Oe6nX6l0U6vYvPZEW33rYPzPDWI+/QgXndXcSKhCfbAPBgH98EHYG9E+7fqW7BXcpWndBA+G4T9273RTUUql/sP9MlDZUyvhekAAAAASUVORK5CYII=" InformativeScreenshot="5a5240a6f85e0068c6ce091871c778ac.jpg" Selector="&lt;html app='msedge.exe' title='Alex Diogo - Site de Desafios RPA' /&gt;" Title="Alex Diogo - Site de Desafios RPA" Url="https://jornadarpa.com.br/alunos/desafios/inputforms/inputforms.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Fim Site_JornadaRpa_Interacao&quot;]" />
+  </Sequence>
+</Activity>
